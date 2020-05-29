@@ -1,3 +1,45 @@
 /* =============
     Footer
 ============= */
+footer{
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #353434;
+    padding: 10px;
+
+    >#socials{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "twitter facebook insta in";
+        color: #838483;
+        padding: 5px;
+        margin-top: 20px;
+        width: 25%;
+    
+            >.twitter{
+                grid-area: twitter;
+            }
+    
+            >.facebook{
+                grid-area: facebook;
+            }
+            
+            >.insta{
+                grid-area: insta;
+            }
+
+            >.in{
+                grid-area: in;
+            }
+        }
+    }
+
+
+.side{
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+}

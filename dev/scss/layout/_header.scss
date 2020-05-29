@@ -1,3 +1,67 @@
 /* =============
     Header
 ============= */
+
+header{
+    background-color: #D8D8D8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-areas: "logo nav . icons";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+    >#logo-container{
+        grid-area: logo;
+        >#logo{
+            width: 150px;
+            padding: 20px;
+        }
+    }
+    
+    #nav-container{
+        grid-area: nav;
+        
+        >#organize{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "products sus";
+        color: #838483;
+        padding: 20px;
+        margin-top: 30px;
+
+        >.products{
+            grid-area: products;
+        }
+
+        >.sus{
+            grid-area: sus;
+        }
+    }
+    
+    }
+
+    #icons{
+        grid-area: icons;
+
+        >#sort{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "profile cart";
+            color: #838483;
+            padding: 20px;
+            margin-top: 30px;
+
+            >.profile{
+                grid-area: profile;
+            }
+
+            >.cart{
+                grid-area: cart;
+            }
+        }
+    }
+
+}

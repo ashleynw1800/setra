@@ -3,3 +3,22 @@
 ============= */
 
 
+a{
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+
+    li{
+        list-style: none;
+    }
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #838483;
+}
