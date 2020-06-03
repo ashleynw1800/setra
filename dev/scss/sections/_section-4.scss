@@ -10,6 +10,18 @@
         grid-template-areas: "part1 part2 part3";
         grid-gap: 1rem;
 
+
+        @media screen and (max-width: 1000px) {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-areas: "part1" 
+                                "part2"
+                                "part3";
+          grid-gap: 1rem;
+        }
+
+        
+      
         .part1{
             grid-area: part1;
         }
@@ -46,7 +58,6 @@
       .hex2 {
         transform: rotate(-60deg);
       }
-
 
     }
 

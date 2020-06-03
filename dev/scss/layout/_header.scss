@@ -30,14 +30,25 @@ header{
         grid-template-areas: "products sus";
         color: #838483;
         padding: 20px;
-        margin-top: 30px;
+        margin-top: 10px;
 
         >.products{
             grid-area: products;
+            padding: 15px;
         }
+        .products:hover{
+            background: #f89324;
+        }
+
+
 
         >.sus{
             grid-area: sus;
+            margin-left: 40px;
+            padding: 15px;
+        }
+        .sus:hover{
+            background: #f89324;
         }
     }
     
@@ -60,6 +71,7 @@ header{
 
             >.cart{
                 grid-area: cart;
+                margin-left: .5rem;
             }
         }
     }

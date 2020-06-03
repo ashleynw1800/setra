@@ -9,37 +9,50 @@ footer{
     background-color: #353434;
     padding: 10px;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "socials . side";
+
     >#socials{
+        grid-area: socials;
+
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: "twitter facebook insta in";
         color: #838483;
-        padding: 5px;
+        padding: 50px;
         margin-top: 20px;
         width: 25%;
     
             >.twitter{
                 grid-area: twitter;
+                
             }
     
             >.facebook{
                 grid-area: facebook;
+                margin-left: 50px;
             }
             
             >.insta{
                 grid-area: insta;
+                margin-left: 50px;
             }
 
             >.in{
                 grid-area: in;
+                margin-left: 50px;
             }
         }
     }
 
 
 .side{
+    grid-area: side;
     text-align: right;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 50px;
+    margin-top: 40px;
     color: #ffffff;
+    display: inline-block;
+    
 }
