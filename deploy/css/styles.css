@@ -370,7 +370,8 @@ header {
   position: fixed;
   display: grid;
   grid-template-areas: "logo nav . icons";
-  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  z-index: 20; }
   header > #logo-container {
     grid-area: logo; }
     header > #logo-container > #logo {
@@ -407,9 +408,13 @@ header {
       margin-top: 30px; }
       header #icons > #sort > .profile {
         grid-area: profile; }
+      header #icons > #sort .profile:hover {
+        color: #f89324; }
       header #icons > #sort > .cart {
         grid-area: cart;
         margin-left: .5rem; }
+      header #icons > #sort .cart:hover {
+        color: #f89324; }
 
 /* =============
     Footer

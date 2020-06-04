@@ -11,6 +11,7 @@ header{
     display: grid;
     grid-template-areas: "logo nav . icons";
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    z-index: 20;
 
 
     >#logo-container{
@@ -68,10 +69,16 @@ header{
             >.profile{
                 grid-area: profile;
             }
+            .profile:hover{
+                color: #f89324;
+            }
 
             >.cart{
                 grid-area: cart;
                 margin-left: .5rem;
+            }
+            .cart:hover{
+                color: #f89324;
             }
         }
     }
