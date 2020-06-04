@@ -5,12 +5,13 @@
 //#section3{
     .sus-img{
         background-image: url("../img/section2_4 copy.jpg");
-        background-size: auto;
+        background-size: cover;
+        background-position: center;
         align-self: stretch;
         object-fit: cover;
         width: 100%;
         position: relative;
-        height: 300px;
+        height: 500px;
     }
 
     h1{
@@ -21,7 +22,7 @@
         font-weight: bold;
         color: #ffffff;
         text-shadow: 0 10px 10px rgba(238, 229, 229, 0.849), 0 6px 6px rgba(0,0,0,0.23);
-        padding-top: 120px;
+        padding-top: 240px;
     }
 
     p{

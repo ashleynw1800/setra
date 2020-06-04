@@ -5,7 +5,8 @@
   margin-top: 100px;
 .hero{
     background-image: url("../img/top_hero.jpg");
-    background-size: auto;
+    background-size: cover;
+    background-position: center;
     align-self: stretch;
     object-fit: fill;
     width: 100%;
@@ -22,6 +23,9 @@ h1{
   text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   font-family: 'Ramabhadra', sans-serif;
   padding: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
 }
 
 }
